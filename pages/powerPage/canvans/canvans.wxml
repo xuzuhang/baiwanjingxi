@@ -1,0 +1,8 @@
+<canvas canvas-id="myCanvas" id='canvsa'>
+      <!-- <cover-view bindtap='saves' >
+          <button style='background-image:url("https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/canvans.png")'></button>
+      </cover-view> -->
+      <cover-image bindtap='saves'  src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/canvans.png'></cover-image>
+</canvas> 
+
+

@@ -1,0 +1,354 @@
+.wrapper{
+  min-height: 2181rpx;
+  width: 100%;
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+  position: relative;
+  padding-bottom: 130rpx;
+}
+.outwrp{
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+}
+.rules{
+  width: 218rpx;
+  height: 57rpx;
+  position: absolute;
+  top: 18rpx;
+}
+.headMap{
+  width: 100%;
+  height: 258rpx;
+  margin-bottom: 34rpx;
+}
+.opportunity{
+  margin:0 auto 30rpx;
+  width: 624rpx;
+  height: 95rpx;
+  display: block;
+  background-size:100% 100%; 
+  background-repeat:no-repeat;
+  text-align: center;
+  line-height: 75rpx;
+  color: #fff;
+}
+.numpeo{
+  text-align: center;
+  margin: 21rpx auto 46rpx;
+  color: #fff;
+  font-size: 33rpx;
+  background: #dc3843;
+  height: 66rpx;
+  line-height: 66rpx;
+  border:4rpx solid #f74c55;
+  width: 610rpx; 
+  border-radius:12rpx; 
+}
+.numpeo text{
+  font-size: 35rpx;
+  color: #ffff00;
+}
+.prize{
+  width: 626rpx;
+  height: 295rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto 47rpx;
+  font-size: 22rpx;
+  overflow: hidden;
+}
+.prize text{
+  width: 195rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 25rpx;
+}
+.prize image{
+  width: 150rpx;
+  height: 43rpx;
+}
+.prize>view{
+  width: 532rpx;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.prize view.put{
+  margin: 119rpx auto 32rpx;
+}
+.prize button{
+  width: 150rpx;
+  height: 43rpx;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  padding: none;
+  background-color:transparent;   
+  margin: 0;
+}
+.prize button::after{
+  border: none;
+}
+.winUser{
+   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 626rpx;
+  height: 468rpx;
+  margin: 0 auto 36rpx;
+  overflow: hidden;
+}
+.winbox{
+  width: 570rpx;
+  height: 268rpx;
+  font-size: 27rpx;
+  margin: 120rpx auto;
+  line-height: 50rpx;
+}
+.footer{
+  line-height: 44rpx;
+  font-size: 23rpx;
+  text-align: center;
+}
+.layer{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  text-align: center;
+}
+.redss{
+  z-index: 1000000;
+}
+.layer__main{
+  width: 663rpx;
+  height: 918rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 116rpx auto 0;
+  overflow: hidden;
+}
+.layer__Lottery{
+  margin: 264rpx auto 33rpx;
+  width: 498rpx;
+  height: 253rpx;
+  background: black;
+}
+.Congratulations{
+  font-size: 27rpx;
+  color: #cc3333;
+}
+.tips{
+  margin: 50rpx auto 30rpx;
+  font-size: 27rpx;
+  width: 80%;
+}
+.layer__main image{
+  width: 533rpx;
+  height: 62rpx;
+}
+.layer .cancel{
+  width: 72rpx;
+  height: 72rpx;
+  margin-top: 33rpx;
+}
+.redLayer{
+  position: relative;
+  width: 100%;
+}
+.redLayer .mian{
+  width: 745rpx;
+  height: 962rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  top: 94rpx;
+  left: 50%;
+  transform:translateX(-50%); 
+}
+.redLayer .twinkles{
+  width: 100%;
+  height: 770rpx;
+  position: absolute;
+  top: 148rpx;
+}
+.redLayer .twinkles image{
+  width: 100%;
+  height: 100%;
+}
+.redLayer .mian-top{
+  margin: 360rpx 0 40rpx;
+  color: #ec1503;
+  font-size: 42rpx;
+  font-weight: 600;
+}
+.redLayer .mian-mid{
+  color: #fecb00;
+  font-weight: 600;
+  font-size: 58rpx;
+}
+.redLayer .mian-bot{
+  margin: 58rpx 0 155rpx;
+  font-size: 25rpx;
+  height: 25rpx;
+  color: #000;
+}
+.redLayer .mian-btn{
+  width: 506rpx;
+  height: 104rpx;
+  margin: 0 auto;
+  background: #ffcc01;
+  border-radius:18rpx;
+  line-height: 104rpx;
+  color: #fefffb;
+  font-size: 40rpx;
+  font-weight: 600; 
+}
+.redLayer .cancel{
+  margin-top: 100rpx;
+}
+.gold{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  background: gold;
+  position: absolute;
+  text-align: center; 
+  line-height: 100rpx;
+  font-size: 20rpx;
+  transition: all 5s ease;
+  z-index: 9999;
+}
+.ruleLayer{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.ruleLayer__main{
+  width: 663rpx;
+  height: 1070rpx;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  margin: 80rpx auto;
+  position: relative;
+  overflow: hidden;
+}
+.ruleLayer__main image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.rulesActivity{
+  margin-top: 159rpx;
+  height: 556rpx;
+  overflow-y: scroll;
+}
+.ruleLayer__main  .tit{
+  font-size: 33rpx;
+  color: #cc3333;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 28rpx;
+}
+.ruleLayer__main text{
+  width: 578rpx;
+  color: #333;
+  font-size: 22rpx;
+  margin-left: 42.5rpx;
+  display: inline-block;
+}
+.awards{
+  height: 260rpx;
+  overflow-y: scroll;
+}
+.fot{
+  position: fixed;
+  height: 130rpx;
+  width: 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  bottom: 0;  
+  display: flex;
+  justify-content: space-between;
+  z-index: 99999;
+}
+.fot view:nth-of-type(1){
+  width: 252rpx;
+  height: 100%;
+}
+.fot view:nth-of-type(2){
+  width: 248rpx;
+  height: 100%;
+}
+.fot view:nth-of-type(3){
+  width: 260rpx;
+  height: 100%;
+}
+
+
+.zhuanwrp{
+  width: 750rpx;
+  height: 778rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.zhuan{
+  width: 750rpx;
+  height: 778rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.panBg{
+  position: absolute;
+  width: 692rpx;
+  height: 692rpx;
+  margin: 0 auto;
+  transform-origin: 346rpx 346rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+  top: 10rpx;
+  left: 29rpx;
+}
+.panBg .item{
+  width: 208rpx;
+  height: 195rpx;
+  position: absolute;
+  top: 47rpx;
+  left: 242rpx;
+  transform-origin:103.5rpx 299rpx;
+}
+
+.zhuanwrp .btn{
+  position: absolute;
+  width: 222rpx;
+  height: 258rpx;
+  left: 50%;
+  top: 217rpx;
+  transition:  transform 500ms ease;
+  z-index: 999;
+}
+.zhuanwrp .outerRing{
+  position: absolute;
+  top: 13rpx;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 692rpx;
+  height: 692rpx;
+}
+.zhuanwrp .outerRing image{
+  width: 692rpx;
+  height: 692rpx;
+}

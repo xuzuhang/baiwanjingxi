@@ -1,0 +1,3 @@
+<view class="money" style="transform: {{aa}};">{{num}}</view>
+<view  class='yuan' style="transform: {{bb}};"></view>
+<view class='hongbao' style="transform: {{cc}};"></view>

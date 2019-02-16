@@ -1,0 +1,40 @@
+/* pages/goldEggs/goldEggs/goldEggs.wxss */
+.eggsBg{
+  width: 100%;
+  height: 490rpx;
+}
+.eggs__main{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 300rpx;
+  position: relative;
+}
+.eggs__main .Hammer{
+  width: 208rpx;
+  height: 208rpx;
+  position: absolute;
+  top: -148rpx;
+  left: 375rpx;
+  transform-origin: 104rpx 104rpx;
+  transition: all 500ms ease;
+}
+.egg-item{
+  width: 210rpx;
+  height: 200rpx;
+  position: relative;
+  margin-bottom: 35rpx;
+}
+.egg-item .egg{
+  height: 100%;
+  width: 100%;
+}
+.egg-item .sleep{
+  width: 38rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 1500ms ease;
+}

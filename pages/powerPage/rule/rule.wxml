@@ -1,0 +1,10 @@
+<view class="header" style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule1.jpg);">
+      <image bindtap='pay' src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/ruleBtn.png'></image>
+</view>
+<image style='width:100%;height:1117rpx;display: block;' src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule2.jpg'></image>
+<view class="center" style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule3.jpg);">
+      <image bindtap='pay'  src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/ruleBtn.png'></image>
+</view>
+<image style='width:100%;height:614rpx;display: block;' src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule4.jpg'></image>
+<image style='width:100%;height:105rpx;display: block;' src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule5.jpg'></image>
+

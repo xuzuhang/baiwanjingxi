@@ -1,0 +1,125 @@
+/* button{
+  width: 90%;
+  margin-top: 50%;
+  transform:translateY(-50%); 
+} */
+.phone{
+  width: 100%;
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: 100% 100%; 
+  overflow: hidden;
+}
+.phone__header{
+  margin:411rpx auto 60rpx;
+}
+.phone button{
+  width: 90%;
+  display: block;
+  width: 720rpx;
+  margin-bottom: 30rpx;
+}
+.phone__center .Ctitle{
+  text-align: center;
+  font-size: 33rpx;
+  color: #ffffcc;
+  position: absolute;
+  width: 277rpx;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 99;
+  background: #e55340;
+}
+.phone__top{
+  width: 708rpx;
+  height: 52rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.phone__top::after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1rpx;
+  background: #f8b551;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.phonenums{
+  width: 718rpx;
+  height: 75rpx;
+  position: relative;
+  margin: 45rpx auto 18rpx;
+}
+.phonenums input{
+  width: 626rpx;
+  height: 100%;
+  border: 4rpx solid #f8b532;
+  border-radius: 16rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 92rpx;
+  font-size: 26rpx;
+  background: #ffffcc;
+}
+.phonenums image{
+  height: 44rpx;
+  width: 44rpx;
+  top: 17rpx;
+  left: 25rpx;
+  position: absolute;
+   z-index: 100;
+}
+.yanzhengma{
+  width: 718rpx;
+  height: 75rpx;
+  position: relative;
+  margin:  0 auto 62rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.yanzhengma image{
+  height: 44rpx;
+  width: 44rpx;
+  top: 17rpx;
+  left: 25rpx;
+  position: absolute;
+  z-index: 100;
+}
+.yan__01{
+  position: relative;
+  width: 463rpx;
+  height: 75rpx;
+}
+.yan__01 input{
+  width: 369rpx;
+  height: 100%;
+  border: 4rpx solid #f8b532;
+  border-radius: 16rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 92rpx;
+  font-size: 26rpx;
+  background: #ffffcc;
+}
+.yan__02{
+  width: 232rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: #ff9900;
+  border-radius:15rpx;
+  text-align: center; 
+}
+.phone__bot button{
+  background: #3399ff;
+  color: #fff;
+  width: 720rpx;
+  background: #ff9900;
+}

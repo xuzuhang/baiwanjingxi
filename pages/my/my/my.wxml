@@ -1,0 +1,119 @@
+<view wx:if="{{phone}}" class="wrapper">
+    <view class='header' style='background-image:url(	https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/mybg.png);'>
+        <view class='header-top'>
+              <view class='header-top-left'>
+                  <view class='tou'>
+                      <image src="{{user.img}}"></image>
+                  </view>
+                  <view class='names'>
+                      {{user.name}}
+                  </view>
+              </view>
+              <view class='header-top-right'>
+                      <button wx:if="{{isvip}}"  style='background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/mys02.png)' open-type="share"></button>
+                      <image wx:else src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/mys03.png' bindtap='torule'></image>
+                      <view>发展团队赚更多</view>
+              </view>
+        </view>
+
+        <view class='header-bot'>
+            <view class='header-bot-left'>
+                <view>余额：￥{{balance}}</view>
+                <view style='font-size:18rpx;'>每月25日结算上月收入</view>
+            </view>
+            <view class='header-bot-right'>
+                <!-- <image  src='../myImg/05.png'></image> -->
+            </view>
+        </view>
+
+    </view>
+    <view class='center'>
+        <view class='center-item'>
+            <view class='center-tit'><image src='../myImg/06.png'></image> 团队人数</view>
+            <view style="font-size:26rpx;margin:24rpx 0;color:#cc0000;">{{teamSize}}人</view>
+        </view>
+        <view  class='center-item' style=' border-left:dotted 1rpx #dddddd;border-right:dotted 1rpx #dddddd;' >
+              <view class='center-tit'><image src='../myImg/07.png'></image>今日收益</view>
+              <view style="font-size:26rpx;margin:24rpx 0;color:#cc0000;">￥{{today}}</view>
+        </view>
+        <view  class='center-item' bindtap='tobill'>
+              <view class='center-tit'><image src='../myImg/08.png'></image>我的账单</view>
+              <view style="font-size:16rpx;margin:10rpx 0 3rpx;color:#cc0000;">上月收益：￥{{lastmonth}}</view>
+              <view style="font-size:16rpx;color:#cc0000;">当月收益：￥{{currentmonth}}</view>
+        </view>
+    </view>
+    <image bindtap='topowerPg' class='mianImg' src='../myImg/20.png'></image>
+    <view class='titlist'>
+         <button class='titlist-item' wx:if="{{isvip}}"  open-type="share">
+            <view class='tit-item-left'>
+                <image  src='../myImg/09.png'></image>去赚钱
+            </view>
+            <view class='tit-item-right'></view>
+         </button>
+        <!-- <view class='titlist-item' wx:if="{{isvip}}">
+            <view class='tit-item-left'>
+                <image  src='../myImg/09.png'></image>去赚钱
+            </view>
+            <view class='tit-item-right'></view>
+        </view> -->
+        <navigator url='../../powerPage/rule/rule' class='titlist-item' wx:if="{{!isvip}}">
+            <view class='tit-item-left'>
+                <image  src='../myImg/10.png'></image>成为SVIP
+            </view>
+            <view class='tit-item-right'></view>
+        </navigator>
+        <navigator url='../workbench/workbench?people={{teamSize}}' class='titlist-item'>
+            <view class='tit-item-left'>
+                <image  src='../myImg/11.png'></image>我的工作台
+            </view>
+            <view class='tit-item-right'></view>
+        </navigator>
+        <navigator url='../myinformation/myinformation' class='titlist-item'>
+            <view class='tit-item-left'>
+                <image  src='../myImg/12.png'></image>我的资料
+            </view>
+            <view class='tit-item-right'></view>
+        </navigator>
+        <button open-type="contact"  class='titlist-item'>
+            <view class='tit-item-left'>
+                <image  src='../myImg/13.png'></image>专属客服
+            </view>
+            <view class='tit-item-right'></view>
+        </button >
+    </view>
+</view>
+<view wx:else class='phone'>
+      <view class='phone__header'>
+            <image src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/myimg01.png'></image>
+            <view class='titles'>道可道智慧传承</view>
+            <button type="primary" bindtap='getPhoneNumber' open-type="getPhoneNumber">授权使用微信快捷登录</button>
+      </view>
+      <view class='phone__center'>
+        <view class='phone__top'>
+            <view class='Ctitle'>使用其他方式登录</view>
+        </view> 
+        <view class='phone__input'>
+            <view class='phonenums'>
+                <image src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/myimg03.png'></image>
+                <input type='number' placeholder='输入手机号' bindblur='yanzheng' value="{{mobile.num}}"></input>
+            </view>
+            
+            <view class='yanzhengma'>
+                <view class='yan__01'>
+                     <image src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/myimg02.png'></image>
+                    <input type='number' class='phoneyan' bindblur='code' placeholder='输入验证码'></input>
+                </view>
+                
+                <view class='yan__02' bindtap='sendcode'>获取短信</view>
+            </view>
+            <view class="phone__bot">
+                  <button bindtap='signIn'>绑定手机并登录</button>
+            </view>
+        </view>
+      </view>
+</view>
+<view class='fot' style='background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/fotsssbg.png)'>
+    <view bindtap='toindex'></view>
+    <view bindtap='topowerPg'></view>
+    <view></view>
+</view>

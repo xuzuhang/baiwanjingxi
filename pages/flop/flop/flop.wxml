@@ -1,0 +1,21 @@
+<view class='main' style='background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/templates/11/02.png);'>
+    <view class='main-inner'>
+        <block wx:for="{{flop}}" wx:key="{{item}}" >
+          <view class="courseLog" bindtap='fan' style='transform: rotateY({{item.angle}}deg);'data-index='{{index}}'>
+              <div class="courseBefore" style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/templates/11/poker_01.png);"></div>
+              <div class="courseAfter" style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/templates/11/poker_10.png);">
+                    {{index}}
+                    <image src='{{item.image}}'></image>
+              </div>
+          </view>
+        </block>
+    </view>
+</view>
+<view class='layer' style='display:{{layers}}'>
+    <view class='layer__main' style='background:red;'>
+          <view class='layer__Lottery'></view>
+          <view class='Congratulations'>恭喜您获得【sdahvdbas】x【1】份！</view>
+          <view class='tips'>您可以在哪里显示抽奖机会，或者撒娇贷记卡收到了傻瓜蛋</view>
+    </view>
+    <image class='cancel' src='../../../img/btn_close_01.png'  bindtap='hidelayer'></image>
+</view>

@@ -1,0 +1,24 @@
+
+<!-- <zhuanpan id='zhuanpan' wx:if="{{pp}}">
+</zhuanpan> -->
+<!-- <button class='sure btn'  open-type='getUserInfo'  bindgetuserinfo='sure'>同意并继续</button>  -->
+ <!-- <view bindtap='reset'>重置</view> -->
+<view class='zhuanwrp'>
+      <view class='zhuan'   style='background-image:url({{turntable.pan_side}});'>
+      </view>
+    <view class='panBg' animation="{{animationData}}" style='background-image:url({{turntable.pan_bg}});'>
+        <block wx:for="{{prizeArray}}" wx:key="{{item}}">
+          <image class='item' src="{{item.photoUrl}}" style='transform: rotateZ({{index*45}}deg);'></image>
+        </block>
+    </view>
+    <image class='btn'  src='{{turntable.btn_start_01}}' bindtap='gos' style='transform:{{btntrform}};'></image>
+    <view class='outerRing'>
+        <view wx:if="{{turntable.Ring.length==1}}">
+            <image src='{{turntable.Ring[0]}}'></image>
+        </view>
+        <view wx:else>
+            <image wx:if="{{twinkle1}}" src='{{turntable.Ring[0]}}'></image>
+            <image wx:else src='{{turntable.Ring[1]}}'></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="eggsBg">
+    <view class='eggs__main'>
+        <view class='egg-item'>
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <view class='egg-item' >
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <view class='egg-item' >
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <view class='egg-item' >
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <view class='egg-item'>
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <view class='egg-item'>
+            <image class='egg' src='../img/02.png'></image>
+            <image class='sleep' src='../img/03.png' style='transform: scale({{effect1}});'></image>
+        </view>
+        <image class='Hammer' src='../img/04.png' style='transform: rotateZ({{hammer.deg}}deg);'></image>
+    </view>
+    
+</view>

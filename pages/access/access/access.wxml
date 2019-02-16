@@ -1,0 +1,39 @@
+ <!-- <button type="primary"  class='sure' open-type='getUserInfo'  bindgetuserinfo='authorization'>我们需要您授权用户信息</button> -->
+<view  class='phone' style='background-image:url(	https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/accessBg.jpg)'>
+      <view class='phone__header'>
+            <button type="primary"  style='background:#ffcc33;' class='sure' open-type='getUserInfo'  bindgetuserinfo='authorization'>授权微信使用用户信息</button>
+            <!-- <button type="primary" wx:if="{{phonelocks}}" style='background:"#62bd62";' bindgetphonenumber="getPhoneNumber" open-type="getPhoneNumber" >授权微信使用手机号码</button> -->
+            <!-- <button type="primary" wx:else style='background:#999;' >授权微信使用手机号码</button> -->
+      </view>
+
+
+      <view class='phone__center' wx:if="{{phonelocks}}">
+      <!-- <view class='phone__center' wx:if="{{refusingAuthorization}}"> -->
+        <view class='phone__top'>
+            <view class='Ctitle'>授权手机登录</view>
+        </view> 
+        <view class='phone__input'>
+            <view class='phonenums'>
+                <image src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/myimg03.png'></image>
+                <input type='number' placeholder='输入手机号' bindblur='yanzheng' value="{{mobile.num}}"></input>
+            </view>
+            
+            <view class='yanzhengma'>
+                <view class='yan__01'>
+                     <image src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/myimg02.png'></image>
+                    <input type='number' class='phoneyan' bindblur='code' placeholder='输入验证码'></input>
+                </view>
+                
+                <view class='yan__02' bindtap='sendcode'>获取短信</view>
+            </view>
+            <view class="phone__bot">
+                  <button bindtap='signIn'>绑定手机并登录</button>
+            </view>
+        </view>
+      </view>
+
+
+</view>
+
+
+ 

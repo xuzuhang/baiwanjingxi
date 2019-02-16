@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "活动",
+  "usingComponents": {
+    "zhuanpan": "/components/zhuanpan/zhuanpan"
+  }
+}

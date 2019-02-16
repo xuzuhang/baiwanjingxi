@@ -1,0 +1,32 @@
+.header{
+  height: 485rpx;
+  width: 100%;
+  background: #f84e3c;
+  text-align: center;
+  color: #fff;
+}
+.header image{
+  background: #000;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius:50%;
+  margin: 86rpx 0 30rpx; 
+}
+.center image{
+  width: 73rpx;
+  height: 73rpx;
+  vertical-align: middle;
+  display: block;
+  margin: 15rpx 42rpx;
+}
+.item{
+  display: flex;
+  font-size: 30rpx;
+  width: 715rpx;
+  height: 107rpx;
+  border: 1rpx solid #dbdbdb;
+  border-radius:9rpx;
+  margin: 27rpx auto; 
+  line-height: 107rpx;
+  color: #ff6633;
+}

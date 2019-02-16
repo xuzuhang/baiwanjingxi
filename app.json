@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index/index",
+    "pages/powerPage/powerPage/powerPage",
+    "pages/access/access/access",
+    "pages/paomd/paomd/paomd",
+    "pages/my/my/my",
+    "pages/flop/flop/flop",
+    "pages/powerPage/canvans/canvans",
+    "pages/goldEggs/goldEggs/goldEggs",
+    "pages/powerPage/web/web",
+    "pages/my/workbench/workbench",
+    "pages/my/myinformation/myinformation",
+    "pages/powerPage/rule/rule",
+    "pages/my/customer/customer",
+    "pages/my/profit/profit",
+    "pages/my/bill/bill",
+    "pages/horseLamp/horseLamp/horseLamp"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  }
+}

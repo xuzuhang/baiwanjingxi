@@ -1,0 +1,16 @@
+.item{
+  display: flex;
+  font-size: 20rpx;
+  width: 715rpx;
+  height: 107rpx;
+  border: 1rpx solid #dbdbdb;
+  border-radius:9rpx;
+  margin: 27rpx auto; 
+  line-height: 107rpx;
+  justify-content: space-between;
+  color: #666;
+}
+.nomore{
+  text-align: center;
+  margin-top: 475rpx;
+}

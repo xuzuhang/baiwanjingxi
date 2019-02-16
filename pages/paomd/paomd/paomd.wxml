@@ -1,0 +1,132 @@
+
+<view class='outwrp' style='background:{{skin.outbackground}};'>
+<view class='wrapper' style='background-image:url({{skin.background}})'>
+    <!-- <view class='gold' style='bottom:{{pig.bottom}};right:{{pig.right}};'>金猪</view> -->
+    <image class='rules' src='{{skin.btn_rule_01}}' bindtap='showrulayer'></image>
+    <image class='headMap' src='{{skin.banner}}'></image>
+    
+          <view class="paomd" style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/templates/6/pmdbgs.png)">
+            <text class="tit">转转赢大奖，好运享不停</text>
+            <view class='twinkleImg'>
+                  <image wx:if="{{twinkle1}}" src='../pImg/twink1.png' class="deng"></image>
+                  <image wx:else src='../pImg/twink2.png' class="deng"></image>
+            </view>
+            <view class="coujiang">
+              <block wx:for="{{Arrays}}" wx:key="{{item}}">
+                <view class="cjitems" style="background:red;">
+                  <image wx:if="{{item}}" style='z-index:99' src="../pImg/pmd02.png"></image>
+                </view>
+              </block>
+              <view class="cjbtn"  bindtap='startcj'>
+                <image src='../pImg/pmdstart.png'></image>
+              </view>
+            </view>
+          </view>
+
+          
+          <view class="opportunity" style='background-image:url({{skin.btn_getmore}});' bindtap='payment'>
+              您有{{tickets}}次机会
+    </view>
+    <view class='numpeo'>
+        此时正有 <text>{{total}}</text> 位在参与活动
+    </view>
+    <view class='prize' style='background-image:url({{skin.prize.bg}});color:{{skin.prize.color}};'>
+          <view class='put'>
+                <view>获得红包：<text style='color:{{skin.prize.textcolor}};'>{{cashs.cash}}</text>元</view>
+                <button  wx:if = "{{helpRed}}" open-type="share" style='background-image:url({{skin.prize. btn_charge_01}})'></button>
+
+                <image wx:else  bindtap='getredenvelopes' src='{{skin.prize. btn_charge_01}}'></image>
+          </view>
+          <view class='gosee'>
+                <view>获得礼券：<text style='color:{{skin.prize.textcolor}};'>{{cashs.coupons}}</text>张</view>
+                <image bindtap='getvoucher' src='{{skin.prize.btn_more_01}}'></image>
+          </view>
+    </view>
+    <view class='winUser' style='background-image:url({{skin.user.bg}});color:{{skin.user.color}};'>
+    <swiper  class='winbox' vertical="true" autoplay="true" circular="true" interval="1500" display-multiple-items='5'>
+        <block wx:for="{{prizeList}}" wx:key="{{index}}">
+          <swiper-item catchtouchmove="stopTouchMove">
+            <view class='win__item'>恭喜 {{item.id}} 获得 {{item.title}}</view>
+          </swiper-item>
+        </block>
+    
+      </swiper>
+    </view>
+    <view class='footer' style='color:#fff;'>
+          <view>活动解释权归[举办公司名称]所有</view>
+          <view>Powered By BoffinLInk.com</view>
+    </view>
+</view>
+<view class='layer redss' style='display:{{layers}}'>
+    <view class='redLayer'>
+          <view class='twinkles'>
+              <image wx:if="{{twinkles}}" src='../../../img/twinkles1.png'></image>
+              <image wx:else src='../../../img/twinkles2.png'></image>
+          </view>
+          <view class='mian' style='background-image:url("https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/redPacket.png");'>
+                <view class='mian-top'>恭喜您，获得{{award.title}}</view>
+                <view class='mian-mid'>{{award.amount}}元</view>
+                <view class='mian-bot'> {{award.awardType===3?"邀请一位好友为您助力解封":""}}</view>
+                <view class='mian-btn' wx:if="{{award.awardType===3}}" bindtap='topowerPage'>立即提现</view>
+                <view class='mian-btn' wx:else bindtap='payagain'>再来一次</view>
+                <image wx:if="{{!(award.awardType===3)}}" class='cancel' src='../../../img/btn_close_01.png'  bindtap='hidelayer'></image>
+          </view>
+  </view>
+    <!-- <view class='layer__main' style='background-image:url("	https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/box_win.png");'>
+          <view class='layer__Lottery'></view>
+          <view class='Congratulations'>恭喜您获得【sdahvdbas】x【1】份！</view>
+          <view class='tips'>您可以在哪里显示抽奖机会，或者撒娇贷记卡收到了傻瓜蛋</view>
+          <image src='../../../img/btn_again_01.png' bindtap='hidelayer'></image>
+          <image src='../../../img/btn_share_01.png'  bindtap='hidelayer'></image>
+    </view>
+    <image class='cancel' src='../../../img/btn_close_01.png'  bindtap='hidelayer'></image> -->
+</view>
+
+<view class='layer' style='display:{{helpLayer}}'>
+    <view class='redLayer'>
+          <view class='twinkles'>
+              <image wx:if="{{twinkles}}" src='../../../img/twinkles1.png'></image>
+              <image wx:else src='../../../img/twinkles2.png'></image>
+          </view>
+          <view class='mian' style='background-image:url("https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/redPacket.png");'>
+                <view class='mian-top'>恭喜您，获得{{award.title}}</view>
+                <view class='mian-mid'>{{helpmoney.me}}元</view>
+                <view class='mian-bot'>您的朋友获得{{helpmoney.friend}}元</view>
+                <image  class='cancel' src='../../../img/btn_close_01.png'  bindtap='hidehelp'></image>
+          </view>
+  </view>
+</view>
+
+
+<view class='ruleLayer' style='display:{{ruleLayer}}'>
+    <view class='ruleLayer__main' style='background-image:url("https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/rule_bg.png");'>
+        <image src='../../../img/btn_close_01.png' bindtap='hideruLayer'></image>
+        <view class='rulesActivity'>
+            <view class='tit'>活动规则</view>
+            <text>sadhakdsmasadsa ldsakda;sakdhlsa;kd;sa
+            sajdhsakd
+            sajdksaj
+            sajdalsad
+            sajdhsakd
+            sajdksaj
+            sajdalsadk</text>
+        </view>
+        <view class='awards'>
+            <view class='tit'>奖项设置</view>
+            <text>sadhakdsmasadsald         sakda;sakdhlsa;kd;sa
+            sajdhsakd
+            sajdksaj
+            sajdalsad
+            sajdhsakd
+            sajdksaj
+            sajdalsadk</text>
+        </view>
+    </view>
+</view>
+<view class='fot' style='background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/fotsssbg.png)'>
+    <view></view>
+    <view bindtap='topowerPg'></view>
+    <view bindtap='tomys'></view>
+</view>
+</view>
+

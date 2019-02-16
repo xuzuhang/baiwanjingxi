@@ -1,0 +1,60 @@
+/* pages/index/index/index.wxss */
+.zhuanwrp{
+  width: 750rpx;
+  height: 778rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.zhuan{
+  width: 750rpx;
+  height: 778rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.panBg{
+  position: absolute;
+  width: 692rpx;
+  height: 692rpx;
+  margin: 0 auto;
+  transform-origin: 346rpx 346rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;  
+  top: 10rpx;
+  left: 29rpx;
+}
+.panBg .item{
+  width: 208rpx;
+  height: 195rpx;
+  position: absolute;
+  top: 67rpx;
+  left: 242rpx;
+  transform-origin:103.5rpx 279rpx;
+}
+
+.zhuanwrp .btn{
+  position: absolute;
+  width: 222rpx;
+  height: 258rpx;
+  left: 50%;
+  top: 217rpx;
+  transition:  transform 500ms ease;
+  z-index: 999;
+}
+.zhuanwrp .outerRing{
+  position: absolute;
+  top: 13rpx;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 692rpx;
+  height: 692rpx;
+}
+.zhuanwrp .outerRing image{
+  width: 692rpx;
+  height: 692rpx;
+}

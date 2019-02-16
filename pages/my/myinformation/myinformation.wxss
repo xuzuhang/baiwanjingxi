@@ -1,0 +1,25 @@
+page{
+  background: #fafafa;
+}
+.header{
+  height: 200rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background: rebeccapurple;
+}
+.header image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius:50%; 
+  margin: 30rpx 0 10rpx;
+}
+.center-item{
+  background: #fff;
+  height: 80rpx;
+  font-size: 24rpx;
+  line-height: 80rpx;
+  text-indent: 2em;
+  margin-top: 30rpx;
+}

@@ -1,0 +1,17 @@
+<view class="header">
+      <image src='{{user.img}}'></image>
+      <view>{{user.name}}</view>
+</view>
+<view class='center'>
+
+  <block wx:for="{{array}}" wx:key="{{item}}">
+    <view class='center-item' bindtap='phone'>
+        <view>邀请{{item}}人</view>
+        <view wx:if="{{item>people}}" class='right'>
+            未完成
+        </view>
+        <view wx:else class='right'><icon type="success_no_circle" size="20"/></view>
+    </view>
+  </block>
+    
+</view>

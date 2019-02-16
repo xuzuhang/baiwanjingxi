@@ -1,0 +1,410 @@
+/* page{
+  min-height: 2752rpx;
+  background: #f23d4c;
+} */
+.iu{
+  width: 100rpx;
+  height: 100rpx;
+}
+.outscrolls{
+  width: 100%;
+  height: 100%;
+}
+.outwrp{
+  min-height: 2952rpx;
+  background: #f23d4c;
+  width: 100%;
+  padding-bottom: 130rpx;
+}
+.wrapper{
+  height: 2175rpx;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
+  display: inline-block;
+}
+.horn{
+  width: 653rpx;
+  height: 50rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 57rpx auto 0;
+}
+.winbox{
+  width: 653rpx;
+  height: 50rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 50rpx;
+}
+.splitMoney{
+  margin-top: 140rpx;
+  /* width: 100%; */
+  height: 102rpx;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.splitMoney image{
+  /* transition: transform 300ms ease; */
+  display: block;
+  height: 104rpx;
+  width: 87rpx;
+}
+.vip{
+  width: 322rpx;
+  height: 322rpx;
+  margin: 156rpx auto 0;
+  position: relative;
+}
+.vip .vipout{
+  width: 100%;
+  height: 100%;
+  transition: transform 200ms ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vip image{
+  width: 255rpx;
+  height: 255rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 500ms ease;
+}
+.numpeo{
+  text-align: center;
+  margin: 21rpx auto 46rpx;
+  color: #fff;
+  font-size: 33rpx;
+  background: #dc3843;
+  height: 66rpx;
+  line-height: 66rpx;
+  border:4rpx solid #f74c55;
+  width: 610rpx; 
+  border-radius:12rpx; 
+}
+.numpeo text{
+  font-size: 35rpx;
+  color: #ffff00;
+}
+.isCollar{
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.redEnvelopes{
+  width: 386rpx;
+  height: 411rpx;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  font-size: 60rpx;
+  color: #ffff00;
+  font-weight: 600;
+  transform-origin: 193rpx 205.5rpx;
+  transition: transform 500ms ease;
+  position: relative;
+}
+.redEnvelopes button{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 109;
+  background: transparent;
+  padding: none;
+
+}
+.redEnvelopes button::after{
+  border: none;
+}
+.redEnvelopes image{
+  z-index: 80;
+}
+.redEnvelopes .outlayer{
+  transform: scale(1.05);
+  transition: transform 1000ms ease;
+  z-index: 70;
+}
+.goldred{
+  width: 380rpx;
+  height: 400rpx;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  font-size: 30rpx;
+  color: #ffff00;
+  font-weight: 600;
+  transform-origin: 193rpx 210rpx;
+  transition: transform 500ms ease;
+  margin: 0rpx 0 0 0;
+  position: relative;
+}
+.isCollar .mains{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+ overflow: hidden;
+}
+
+.isCollar image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.goldred .mains view{
+  margin-top: 220rpx;
+  font-size: 50rpx;
+}
+.redEnvelopes .immediately{
+  font-size: 29rpx;
+  margin: 85rpx 0 118rpx;
+  font-size: 46rpx;
+  color: #fff;
+}
+.invitingBtn{
+  width: 670rpx;
+  height: 122rpx;
+  margin: 62rpx auto 58rpx;
+  background-repeat: no-repeat;
+  background-size:100% 100%; 
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  line-height: 115rpx;
+  color: #fff;
+}
+
+.footer{
+  width: 699rpx;
+  height: 1274rpx;
+  margin: 0 auto;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  overflow: hidden;
+}
+.fot-top{
+  width: 620rpx;
+  height: 132rpx;
+  margin: 121rpx auto 12rpx;
+  color: #fff;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.fot-top-left{
+  margin: 16rpx 0 0 143rpx;
+  font-weight: normal;
+  font-size: 34rpx;
+  color: #f2fc00;
+}
+.fot-top-right{
+  margin: 10rpx 78rpx 0 0;
+  line-height: 56rpx;
+  font-size: 26rpx;
+}
+.footer .fotscr{
+  height: 980rpx;
+  width: 618rpx;
+  margin: 0 auto;
+}
+.scr-item{
+  width: 100%;
+  background: #e9fbf9;
+  border-radius:23rpx;
+  margin-bottom: 9rpx; 
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  color: #666;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.scr-left,.scr-right{
+  display: flex;
+ 
+}
+.imageOut{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius:50%;
+  background: #bfede9; 
+  margin: 9rpx 25rpx 0 17rpx;
+  overflow: hidden;
+}
+.imageOut image{
+  width: 66rpx;
+  height: 66rpx;
+  margin: 4rpx 0 0 4rpx;
+  display: block;
+  border-radius:50%; 
+}
+.scr-right>view{
+  width: 134rpx;
+  height: 66rpx;
+  margin: 12rpx;
+  line-height: 66rpx;
+}
+.scr-right .Inviting{
+  margin: 12rpx 34rpx 0 10rpx;
+}
+.scr-right .btn{
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  border-radius:10rpx; 
+}
+ .Inviting button{
+   padding: none;
+   margin: none;
+   line-height: 66rpx;
+   font-size: 26rpx;
+ }
+ .Inviting button::after{
+   border: none;
+ }
+.isvip{
+  text-align: center;
+}
+.isvip image{
+  width: 42rpx;
+  height: 20rpx;
+}
+.viplayer{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+}
+.redLayer{
+  position: relative;
+  width: 100%;
+}
+.redLayer .mian{
+  width: 745rpx;
+  height: 962rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: absolute;
+  top: 94rpx;
+  left: 50%;
+  transform:translateX(-50%); 
+}
+.redLayer .twinkles{
+  width: 100%;
+  height: 770rpx;
+  position: absolute;
+  top: 148rpx;
+}
+.redLayer .twinkles image{
+  width: 100%;
+  height: 100%;
+}
+.redLayer .mian-top{
+  margin: 360rpx 0 40rpx;
+  color: #ec1503;
+  font-size: 42rpx;
+  font-weight: 600;
+}
+.redLayer .mian-mid{
+  color: #fecb00;
+  font-weight: 600;
+  font-size: 58rpx;
+}
+.redLayer .mian-bot{
+  margin: 58rpx 0 155rpx;
+  font-size: 25rpx;
+  height: 25rpx;
+  color: #000;
+}
+.redLayer .mian-btn{
+  width: 506rpx;
+  height: 104rpx;
+  margin: 0 auto;
+  background: #ffcc01;
+  border-radius:18rpx;
+  line-height: 104rpx;
+  color: #fefffb;
+  font-size: 40rpx;
+  font-weight: 600; 
+}
+.redLayer .cancel{
+  margin-top: 100rpx;
+}
+.redLayer .cancel{
+  width: 72rpx;
+  height: 72rpx;
+}
+.fot{
+  position: fixed;
+  height: 130rpx;
+  width: 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  bottom: 0;  
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+.fot view:nth-of-type(1){
+  width: 252rpx;
+  height: 100%;
+}
+.fot view:nth-of-type(2){
+  width: 248rpx;
+  height: 100%;
+}
+.fot view:nth-of-type(3){
+  width: 260rpx;
+  height: 100%;
+}
+.sharemian{
+  width: 621rpx;
+  height: 863rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  margin: 100rpx auto 0;  
+  text-align: center;
+  overflow: hidden;
+}
+.sharemian .titles{
+  margin: 376rpx auto 100rpx;
+  font-size: 47rpx;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+}
+.sharemian  image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-top: -5rpx;
+}
+.sharemian .btns {
+  width: 468rpx;
+  height: 70rpx;
+  border-radius:35rpx;
+  line-height: 70rpx;
+  margin: 0 auto 56rpx; 
+  color: #fff;
+  font-size: 34rpx;
+  border: 1rpx #fff solid;
+  background: transparent;
+}

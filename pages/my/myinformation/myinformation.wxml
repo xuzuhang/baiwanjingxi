@@ -1,0 +1,9 @@
+<view class="header">
+      <image src='{{user.img}}'></image>
+      <view>{{user.name}}</view>
+</view>
+<view class='center'>
+    <view class='center-item' bindtap='phone'>
+        修改手机号码
+    </view>
+</view>

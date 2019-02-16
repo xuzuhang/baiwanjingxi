@@ -1,0 +1,26 @@
+.header{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 796rpx;
+  overflow: hidden;
+}
+.header image{
+  width: 635rpx;
+  height: 101rpx;
+  display: block;
+  margin: 585rpx auto 0;
+}
+.center{
+  width: 750rpx;
+  height: 728rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+   overflow: hidden;
+}
+.center image{
+   width: 635rpx;
+    height: 101rpx;
+   display: block;
+  margin: 20rpx auto 0;
+}

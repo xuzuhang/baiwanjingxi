@@ -1,0 +1,17 @@
+<view class="header">
+    <image src="{{img}}"></image>
+    <view style='font-size:30rpx;'>您的总收益</view>
+    <view style='font-size:43rpx;font-weight:600;'>0.00</view>
+</view>
+<view class='center'>
+    <view class='item'>
+        <image src='../myImg/pro1.png'></image>
+        <view style='color:#000;margin-right:68rpx;'>活动收益</view>
+        <view>0</view>
+    </view>
+    <view class='item'>
+        <image src='../myImg/pro2.png'></image>
+        <view style='color:#000;margin-right:68rpx;'>团队收益</view>
+        <view>0</view>
+    </view>
+</view>

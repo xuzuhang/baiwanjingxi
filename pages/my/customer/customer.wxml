@@ -1,0 +1,6 @@
+<view class='wrapper' style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/customer01.png)">
+      <view class='wx' style="background-image:url(https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/customer03.png)">
+        <view>tongxuhan</view>
+      </view>
+      <image class='btn' bindtap='copy' src='https://lottery-1255515741.cos.ap-shanghai.myqcloud.com/lotteries/1/bg/customer02.png'></image>
+</view>
